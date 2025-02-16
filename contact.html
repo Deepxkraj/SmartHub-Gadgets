@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SmartHub Gadgets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Dark Theme Styles */
+        body {
+    background: url('smarthub-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: #000;
+            padding: 15px;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #4CAF50 !important;
+            font-weight: bold;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #66ff66 !important;
+        }
+
+        /* Contact Section */
+        .container {
+            margin-top: 50px;
+        }
+
+        .contact-box {
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+        }
+
+        .form-control {
+            background: #252525;
+            color: #fff;
+            border: 1px solid #4CAF50;
+        }
+
+        .form-control:focus {
+            background: #2e2e2e;
+            color: #fff;
+            border: 1px solid #66ff66;
+            box-shadow: none;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Submit Button */
+        .btn-custom {
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #66ff66;
+            color: black;
+        }
+
+        /* Footer */
+        .footer-custom {
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer-custom a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer-custom a:hover {
+            color: #66ff66;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <img src="logo.png" alt="logo" class="rounded-image" height="40">
+            <a class="navbar-brand" href="index.html">SmartHub Gadgets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-5 mb-4">
+                <div class="contact-box">
+                    <h4>SmartHub Gadgets</h4>
+                    <p><strong>Address:</strong> 789 Tech Avenue, Silicon City, Bangalore</p>
+                    <p><strong>Phone:</strong> <a href="tel:+919876543210" class="text-light">+91 9876543210</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:support@smarthubgadgets.com" class="text-light">support@smarthubgadgets.com</a></p>
+                    <p><strong>Working Hours:</strong> Mon - Sat: 10 AM - 8 PM</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="contact-box">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom">
+        <p>&copy; 2025 SmartHub Gadgets. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
